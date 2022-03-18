@@ -82,7 +82,7 @@ class RestProxyTestBase extends TestCase
         $this->restProxy = $serviceRestProxy;
     }
 
-    protected function onNotSuccessfulTest(\Exception $e)
+    protected function onNotSuccessfulTest(\Throwable $e): void
     {
         parent::onNotSuccessfulTest($e);
 
